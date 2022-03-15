@@ -1,0 +1,14 @@
+
+斷點設定
+
+@media screen and (min-width: 1025px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024.98px){
+
+}
+
+@media screen and (max-width: 767.98px){
+
+}

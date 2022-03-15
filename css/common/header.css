@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    max-width: 100%;
+
+}
+body{
+    /* flex-shrink:0; */
+    margin: 0 auto;
+}
+header{
+    max-height: 100px;
+    position: sticky;
+    top :0 ;
+    z-index: 10;
+    background-color: #9070af;
+}
+nav{
+    background-color: #9070af;
+    font-family: "Arial Black"!important;
+    margin: 0 auto;
+    /* padding: 0px 30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+
+/* 左邊圖片 */
+.logo{
+    display: flex;
+    width: 40%;
+    margin-left: 40px;
+}
+.nav_a{
+    /* border: 1px solid red; */
+    /* height: 80px; */
+    margin-top: 30px;
+    display: block;
+}
+.nav_a a img{
+    width: 80%;
+}
+.logo div a img {
+    width: 80%;
+}
+
+/*選單*/
+.menu_ul{
+    display: flex;
+    font: inherit;
+    line-height: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.menu_item{
+    margin-left: 2px !important;
+    font-size: 18px;
+    padding: 10px 19px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+.menu_item a:hover{
+    color: black;
+    transition: 0.6s;
+}
+
+@media screen and (min-width: 1025px){
+    nav{
+        max-width: 1340px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024.98px){
+
+}
+
+@media screen and (max-width: 767.98px){
+
+}

@@ -1,0 +1,52 @@
+@import "./index.css";
+
+.section0_dots_inside {
+    position: absolute;
+    width: 60%;
+    left: 100px;
+    z-index: -0;
+    top: 130px;
+    opacity: 0.5;
+}
+.purple_bg {
+    width: 100%;
+    height: 26vw;
+    background-color: #9070af;
+}
+
+.section_case_title{
+    width: 1100px;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1100px;
+    position: relative;
+    padding-top: 50px;
+
+}
+.case_client_inside{
+    width: auto;
+    padding: 12px 15px;
+    display: inline-block;
+    background-color: white;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+.case_title_inside {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    position: relative;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+#section1_case {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 60px;
+}
