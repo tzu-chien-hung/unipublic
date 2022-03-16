@@ -18,6 +18,7 @@ h2{
     display: block;
     font-size: 24px;
     margin-top: 45px;
+    letter-spacing: 1px;
 }
 .main0{
     height: 75vh;
@@ -46,10 +47,14 @@ h2{
     left: 50%;
     transform: translate(-50%, 150%);
     width: 4%;
+    cursor: pointer;
 }
 
-.main_1to3{
-
+.active{
+    background-color: #fff;
+}
+.tag_item{
+    color: #9070af;
 }
 .main1{
     width: 100%;

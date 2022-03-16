@@ -35,17 +35,17 @@
                 <div class="menu_bar"></div>
             </div>
             <ul class="menu_ul">
-                <li class="menu_item" data-menu="section1">
+                <li class="menu_item" id="section1">
                     <a>
                         Works
                     </a>
                 </li>
-                <li class="menu_item" data-menu="section2">
+                <li class="menu_item" id="section2">
                     <a>
                         About
                     </a>
                 </li>
-                <li class="menu_item" data-menu="section3">
+                <li class="menu_item" id="section3">
                     <a>
                         Contact
                     </a>
@@ -69,20 +69,20 @@
         <div class="main_1to3">
             <div class="main1">
                 <div class="main1_bc">
-                    <div>
+                    <div class="main1_title main1_title1" id="main_arrow">
                         <h2>Works /</h2>
                     </div>
-                    <div class="tag_container wrap_size" id="tag_container">
-                        <div class="tag_item active">生活時尚</div>
-                        <div class="tag_item ">政府組織</div>
-                        <div class="tag_item ">3C科技</div>
-                        <div class="tag_item ">健康醫療</div>
-                        <div class="tag_item ">休閒娛樂</div>
+                    <div class="tag_container wrap_size1" id="tag_container">
+                        <div class="tag_item active case_name" id="case_name1">生活時尚</div>
+                        <div class="tag_item case_name"id="case_name2">政府組織</div>
+                        <div class="tag_item case_name" id="case_name3">3C科技</div>
+                        <div class="tag_item case_name" id="case_name4">健康醫療</div>
+                        <div class="tag_item case_name" id="case_name5">休閒娛樂</div>
                     </div>
 
-                    <div>
+                    <div id="case_title1" class="case__title">
                         <div>
-                            <span class="main1_span">生活時尚</span>
+                            <span class="main1_span" >生活時尚</span>
                         </div>
                         <br>
                         <hr>
@@ -256,9 +256,9 @@
                             <div class="btn_hide_arrow" id="btn_change_arrow"></div>
                         </div>
                     </div>
-                    <div>
+                    <div id="case_title2" class="case__title">
                         <div>
-                            <span class="main1_span">政府組織</span>
+                            <span class="main1_span" >政府組織</span>
                         </div>
                         <br>
                         <hr>
@@ -312,9 +312,9 @@
                             <div class="btn_hide_arrow" id="btn_change_arrow"></div>
                         </div>
                     </div>
-                    <div>
+                    <div id="case_title3" class="case__title">
                         <div>
-                            <span class="main1_span">3C科技</span>
+                            <span class="main1_span" >3C科技</span>
                         </div>
                         <br>
                         <hr>
@@ -378,15 +378,15 @@
                             <div class="btn_hide_arrow" id="btn_change_arrow"></div>
                         </div>
                     </div>
-                    <div>
+                    <div id="case_title4" class="case__title">
                         <div>
-                            <span class="main1_span">健康醫療</span>
+                            <span class="main1_span" >健康醫療</span>
                         </div>
                         <br>
                         <hr>
                         <br>
                         <div class="case_group_all">
-                            <div class="case_group wrap_size" id="">
+                            <div class="case_group wrap_size hideCase" id="">
                                 <div class="main1_case">
                                     <a href="" class="main_a">
                                         <img src="https://www.unisincere.com.tw/api/images/dc729efbf3d29409fd55f1d892830337.jpg"
@@ -397,12 +397,16 @@
                                         </div>
                                     </a>
                                 </div>
+                                <div class="btn_hide" style="display: none;">
+                                    <p class="btn_hide_txt" id="btn_change_word">see more</p>
+                                    <div class="btn_hide_arrow" id="btn_change_arrow"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div id="case_title5" class="case__title">
                         <div>
-                            <span class="main1_span">休閒娛樂</span>
+                            <span class="main1_span" >休閒娛樂</span>
                         </div>
                         <br>
                         <hr>
@@ -461,7 +465,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btn_hide" id="btn_change">
+                        <div class="btn_hide" >
                             <p class="btn_hide_txt" id="btn_change_word">see more</p>
                             <div class="btn_hide_arrow" id="btn_change_arrow"></div>
                         </div>
@@ -469,7 +473,7 @@
                 </div>
             </div>
             <div class="main2">
-                <div>
+                <div class="main1_title">
                     <h2>About /</h2>
                 </div>
                 <div class="about_bg">
@@ -637,7 +641,7 @@
             </div>
             <div class="main3">
                 <div class="main3_bc">
-                    <div>
+                    <div class="main1_title">
                         <h2>Contact /</h2>
                     </div>
                     <div class="contact_main3">
@@ -742,6 +746,7 @@
     <footer class="footer_2">
         © 2021 UNI Public Relations All rights reserved.
     </footer>
+    <script src="./js/header.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
