@@ -166,7 +166,7 @@ h2{
 .main2{
     margin: 0 auto;
     max-width: 1280px;
-    width: 90%;
+    /* width: 90%; */
 }
 .award_item{
     margin: 10px 0px;
@@ -196,7 +196,14 @@ h2{
     white-space: nowrap;
 }
 .service_content{
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 50px;
+    align-items: center;
 }
 .service_content::before {
     content: "";
@@ -242,6 +249,170 @@ h2{
     max-width: 1280px;
 }
 
+.about_bg {
+    width: 70%;
+    max-width: 935px;
+    padding-bottom: 25%;
+    background-image: url(../img/about_bg.png);
+    background-size: contain;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+  }
+  .about_description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.8;
+    font-size: 24px;
+  }
+  
+  .subtitle_box {
+    width: 27%;
+    height: 45px;
+    border: 3px solid #000;
+    position: absolute;
+    background-color: #fff;
+    top: 20px;
+    left: -90px;
+    color: #000;
+    text-align: center;
+    line-height: 45px;
+    font-size: 24px;
+  }
+  .line_box {
+    position: absolute;
+    background-color: #000;
+    height: 5%;
+    width: 10%;
+  }
+  .line_box_1 {
+    width: 10%;
+    /* height: 5%; */
+    top: -50px;
+    left: 150px;
+  }
+  .line_box_2 {
+    background-color: #fff;
+    border: 3px solid #000;
+    right: -6%;
+    width: 12%;
+    top: 50px;
+    height: 3%;
+  }
+  .line_box_3 {
+    bottom: 40%;
+    left: -18%;
+  }
+  .line_box_4 {
+    width: 20%;
+    height: 10%;
+    bottom: -5%;
+    right: -10%;
+    background-color: #9070af;
+  }
+  .line_box_5 {
+    width: 6%;
+    bottom: -13%;
+    left: 6%;
+  }
+  .line_box_6 {
+    bottom: -20%;
+    right: 12%;
+    width: 9%;
+  }
+  
+.service_area {
+    padding-top: 150px;
+    width: 78%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .service_title {
+    width: 20%;
+    font-size: 24px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .service_content {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+  
+  .service_content .service_item {
+    width: 50%;
+    font-size: 20px;
+    padding: 10px 0;
+    padding-left: 14px;
+    position: relative;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  .service_item::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 0px;
+    top: 20px;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+  }
+  
+  .service_content::before {
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 12px;
+    background-color: #1a1a1a;
+    width: 100%;
+  }
+  .service_content1::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    /* top: 12px; */
+    background-color: #1a1a1a;
+    width: 100%;
+    bottom: 0;
+  }
+  .award_content {
+    width: 100%;
+    color: #fff;
+    padding-top: 50px;
+  }
+  .award_item {
+    margin: 10px 0px;
+    background-color: #000;
+    padding: 12px 0px 12px 30px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .award_item_year {
+    padding-right: 20px;
+    letter-spacing: 1px;
+  }
+  .service_area_2 {
+    padding-top: 100px;
+  }
+
+
+
+
+
+
+/* ======   contact ======= */
 .contact_main3{
     display:flex;
     line-height: 2;
@@ -322,10 +493,13 @@ h2{
 
 }
 
+.contact_notice_msg{
+    display: none;
+}
 
-
-
-
+.active3{
+    display: block;
+}
 
 @media screen and (min-width: 1025px){
     .main0{

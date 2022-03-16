@@ -71,3 +71,23 @@ btn_change.forEach(function (element, index) {
 
 
 
+// =================    see more btn 滑動特效 =====================//
+
+// for(let i = 0; i < input.length; i++){
+//     if(input[i].value){
+//         label[i].classList.add('active3');
+//     }else{
+//         label[i].classList.remove('active3');
+//     }
+// }
+
+let input = document.getElementById("input_name");
+let span = document.getElementById("client_email_input");
+console.log(span)
+
+var rules = new RegExp('[0-9]');
+if(input === ''){
+    span.classList.add('active3');
+}
+
+// console.log(input)
