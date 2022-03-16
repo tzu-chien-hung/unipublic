@@ -84,20 +84,7 @@ h2{
 .case_group{
     display: flex;
     flex-wrap: wrap;
-    display: none;
-
 }
-
-.main1_case_see:nth-child(1){
-    display: block;
-}
-.main1_case_see:nth-child(2){
-    display: block;
-}
-.main1_case_see:nth-child(3){
-    display: block;
-}
-
 .main1_case{
     width: 32%;
     height: 286.7px;
@@ -105,6 +92,22 @@ h2{
     overflow: hidden;
     justify-content: flex-start;
 }
+
+.hideCase .main1_case{
+    display: none;
+}
+
+.main1_case:nth-child(1){
+    display: block;
+}
+.main1_case:nth-child(2){
+    display: block;
+}
+.main1_case:nth-child(3){
+    display: block;
+}
+
+
 
 .main_a{
     position: relative;

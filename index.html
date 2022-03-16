@@ -79,6 +79,7 @@
                         <div class="tag_item ">健康醫療</div>
                         <div class="tag_item ">休閒娛樂</div>
                     </div>
+
                     <div>
                         <div>
                             <span class="main1_span">生活時尚</span>
@@ -87,7 +88,7 @@
                         <hr>
                         <br>
                         <div class="case_group_all">
-                            <div class="case_group wrap_size main_case_see" id="case_group_1">
+                            <div class="case_group wrap_size hideCase" id="">
                                 <div class="main1_case ">
                                     <a href="./case.html" class="main_a">
                                         <img src="https://www.unisincere.com.tw/api/images/b962e5de20decf3ac03eaf3360ade902.jpg"
@@ -255,7 +256,6 @@
                             <div class="btn_hide_arrow" id="btn_change_arrow"></div>
                         </div>
                     </div>
-
                     <div>
                         <div>
                             <span class="main1_span">政府組織</span>
@@ -264,7 +264,7 @@
                         <hr>
                         <br>
                         <div class="case_group_all">
-                            <div class="case_group wrap_size" id="case_group_1">
+                            <div class="case_group wrap_size hideCase" id="">
                                 <div class="main1_case">
                                     <a href="" class="main_a">
                                         <img src="https://www.unisincere.com.tw/api/images/12b43da1f2a17b4c286d44c7ace22e40.jpg"
@@ -307,9 +307,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btn_hide">
-                            <p class=" btn_hide_txt">hide</p>
-                            <div class="btn_hide_arrow"></div>
+                        <div class="btn_hide" id="btn_change">
+                            <p class="btn_hide_txt" id="btn_change_word">see more</p>
+                            <div class="btn_hide_arrow" id="btn_change_arrow"></div>
                         </div>
                     </div>
                     <div>
@@ -320,7 +320,7 @@
                         <hr>
                         <br>
                         <div class="case_group_all">
-                            <div class="case_group wrap_size" id="case_group_1">
+                            <div class="case_group wrap_size hideCase" id="">
                                 <div class="main1_case">
                                     <a href="" class="main_a">
                                         <img src="https://www.unisincere.com.tw/api/images/5070cf809ac21ed695e802f9466f1195.JPG"
@@ -373,9 +373,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btn_hide">
-                            <p class=" btn_hide_txt">hide</p>
-                            <div class="btn_hide_arrow"></div>
+                        <div class="btn_hide" id="btn_change">
+                            <p class="btn_hide_txt" id="btn_change_word">see more</p>
+                            <div class="btn_hide_arrow" id="btn_change_arrow"></div>
                         </div>
                     </div>
                     <div>
@@ -386,7 +386,7 @@
                         <hr>
                         <br>
                         <div class="case_group_all">
-                            <div class="case_group wrap_size" id="case_group_1">
+                            <div class="case_group wrap_size" id="">
                                 <div class="main1_case">
                                     <a href="" class="main_a">
                                         <img src="https://www.unisincere.com.tw/api/images/dc729efbf3d29409fd55f1d892830337.jpg"
@@ -408,7 +408,7 @@
                         <hr>
                         <br>
                         <div class="case_group_all">
-                            <div class="case_group wrap_size" id="case_group_1">
+                            <div class="case_group wrap_size hideCase" id="">
                                 <div class="main1_case">
                                     <a href="" class="main_a">
                                         <img src="https://www.unisincere.com.tw/api/images/0ed2c26b8bd13d10e169620dc276c91c.JPG"
@@ -461,9 +461,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btn_hide">
-                            <p class=" btn_hide_txt">hide</p>
-                            <div class="btn_hide_arrow"></div>
+                        <div class="btn_hide" id="btn_change">
+                            <p class="btn_hide_txt" id="btn_change_word">see more</p>
+                            <div class="btn_hide_arrow" id="btn_change_arrow"></div>
                         </div>
                     </div>
                 </div>
@@ -742,29 +742,7 @@
     <footer class="footer_2">
         © 2021 UNI Public Relations All rights reserved.
     </footer>
-    <script>
-        let btn_txt = document.getElementById("btn_change_word");
-        let btn_arrow = document.getElementById("btn_change_arrow");
-        let btn_change = document.getElementById("btn_change");
-
-        btn_change.addEventListener('click', function () {
-            if (btn_txt.innerText == "see more") {
-                btn_txt.innerText = "hide";
-                btn_arrow.style = "transform: rotate(180deg);";
-            } else {
-                btn_txt.innerText = "see more";
-                btn_arrow.style = "transform: rotate(-180deg);";
-            }
-        })
-
-
-        // function myFunction() {
-        //     btn_txt.innerHTML = "hide";
-        //     btn_arrow.style = "transform: rotate(180deg);";
-        // }
-
-
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
