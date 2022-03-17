@@ -15,7 +15,7 @@ let works_case = document.querySelectorAll(".tag_item");
 works_case.forEach(function (element, index) {
     element.addEventListener('click', function () {
         for (let i = 0; i < works_case.length; i++) {
-            works_case[i].classList.remove("active")
+            works_case[i].classList.remove("active");
         }
         works_case[index].classList.add("active");
     })

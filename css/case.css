@@ -125,7 +125,8 @@
 /* ======================= 輪播區 =======================*/
 .slider_container{
     position: absolute;
-    left: calc((100% - (50vw - 2px))/2);
+    left: 50%;
+    transform: translateX(-50%);
     top: 30vw;
 }
 .slider_flex {
