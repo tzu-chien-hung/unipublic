@@ -12,3 +12,14 @@
 @media screen and (max-width: 767.98px){
 
 }
+
+    --slider-width-desktop: 50vw;
+    --slider-height-desktop: 37vw;
+    --slider-small-img-height-desktop: 10vw;
+    --slider-width-pad: 65vw;
+    --slider-height-pad: 50vw;
+    --slider-small-img-height-pad: 10vw;
+    --slider-width-mobile: 70vw;
+    --slider-height-mobile: 53vw;
+    --slider-small-img-height-mobile: 12vw;
+    --slider-number: 5;

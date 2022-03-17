@@ -12,7 +12,41 @@
     width: 100%;
     height: 26vw;
     background-color: #9070af;
+    margin-bottom: 907px;
 }
+
+.slider_container{
+    position: absolute;
+    left: calc((100% - 1066px)/2);
+    top: 333px;
+}
+
+
+.slider_arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    cursor: pointer;
+    border-color: transparent #9070af transparent transparent;
+  }
+  .slider_arrow_left:hover {
+    border-color: transparent #bba1cb transparent transparent;
+  }
+  .slider_arrow_right:hover {
+    border-color: transparent transparent transparent #bba1cb;
+  }
+  .slider_arrow_left {
+    margin-right: 30px;
+    border-width: 18px 24px 18px 0;
+  }
+  .slider_arrow_right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 0 18px 24px;
+    border-color: transparent transparent transparent #9070af;
+    margin-left: 30px;
+  }
 
 .section_case_title{
     width: 1100px;
@@ -49,4 +83,82 @@
     max-width: 900px;
     margin: auto;
     margin-bottom: 60px;
+}
+
+.slider_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_small_flex {
+    display: flex;
+    justify-content: flex-start;
+    width: calc(50vw - 2px);
+    margin: auto;
+    padding-left: 0px;
+    
+}
+
+.slider_img {
+    width: 50vw;
+    height: 37vw;
+    background-size: cover;
+    flex-shrink: 0;
+  }
+
+.slider_img_small {
+    width: calc(48.9vw / 5);
+    height: 10vw;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-position: center;
+}
+.slider_all {
+    display: flex;
+    position: absolute;
+    padding: 0;
+}
+.slider_main_img {
+    width: calc(50vw - 2px);
+    height: 37vw;
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1440px){
+    .purple_bg {
+        height: 10vw;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .purple_bg {
+        height: 19.2vw;
+    }
+    .section_case_title {
+        width: 85%;
+        max-width: 1100px;
+        padding-top: 35px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024.98px){
+
+}
+
+@media screen and (max-width: 767.98px){
+
+}
+@media screen and (max-width: 420px) {
+      
+    .slider_arrow_right {
+        margin-left: 15px;
+        border-width: 14px 0 14px 20px;
+      }
+      .slider_arrow_left {
+        margin-right: 15px;
+        border-width: 14px 20px 14px 0;
+      }
 }
