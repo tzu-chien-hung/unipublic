@@ -10,8 +10,9 @@ body{
     margin: 0 auto;
 }
 header{
+    width: 100%;
     max-height: 100px;
-    height: 100px;
+    /* height: 100px; */
     position: sticky;
     top :0 ;
     z-index: 10;
@@ -21,13 +22,14 @@ nav{
     background-color: #9070af;
     font-family: "Arial Black"!important;
     margin: 0 auto;
-    /* padding: 0px 30px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid red; */
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 30px;
 }
-
 
 /* 左邊圖片 */
 .logo{
@@ -50,7 +52,7 @@ nav{
 
 /*選單*/
 
-.menu_ul{
+.menu{
     display: flex;
     font: inherit;
     line-height: 80px;
@@ -66,7 +68,41 @@ nav{
     color: white;
     font-weight: 900;
 }
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
 
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
 .menu_item a{
     letter-spacing: 2px;
 }
@@ -76,21 +112,129 @@ nav{
 }
 
 @media screen and (min-width: 1025px){
+    /* header{
+        height: 100px;
+    } */
     nav{
         max-width: 1280px;
     }
     .menu{
-        display: none;
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024.98px){
+    .logo {
+        width: 80%;
     }
     .blackBG{
         display: none;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024.98px){
+@media screen and (min-width: 420px) and (max-width: 767.98px){
+    .logo {
+        width: 80%;
+    }
+    nav{
+        padding: 15px 0px 15px 15px;
+    }
+    .nav_a{
+        margin-top: 0px;
 
+    }
 }
 
-@media screen and (max-width: 767.98px){
+@media screen and (max-width: 419.98px) {
+    .logo {
+        width: 85%;
+    }
+    nav{
+        padding: 15px 0px 15px 15px;
+    }
+    .nav_a{
+        margin-top: 0px;
 
+    }
 }
+
+
+
+.top-nav {
+    position: relative;
+  }
+  
+  /* .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+   */
+  /* .menu > li {
+    margin: 0 1rem;
+  } */
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 1025px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 155px;
+      right: -40%;
+      flex-direction: column;
+      width: 40%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      /* height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0; */
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked ~ .menu{
+        position: absolute;
+        right: 0;
+      }
+    #menu-toggle:checked ~ .menu li {
+      /* border: 1px solid #333; */
+      height: 2.5em;
+      padding: 0.5em;
+
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #9070af;
+      height: 100%;
+    }
+    /* .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    } */
+  }

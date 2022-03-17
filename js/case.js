@@ -13,7 +13,7 @@ ul.insertBefore(li_1,li[0])
 // ================ 自動輪播
 // ================ ˋ${}ˋ 內容會被視為js
 
-setInterval(function(){
+const carousel = setInterval(function(){
     
     index++;
     ul.style.transform = `translateX(${-100 + (-index * 100)}%)`;
@@ -26,3 +26,19 @@ setInterval(function(){
 
 //左右按鍵切換圖片
 
+let arrow_left = document.getElementById('slider_arrow_left');
+let arrow_right = document.getElementById('slider_arrow_right');
+// console.log(arrow_left)
+
+// arrow_left.addEventListener('click', function (){
+//     clearInterval(carousel);
+//     index++;
+//     ul.style.transform = `translateX(${(-index * 100)}%)`;
+
+// });
+// arrow_right.addEventListener('click', function (){
+//     clearInterval(carousel);
+//     index++;
+//     ul.style.transform = `translateX(100%)`;
+//     carousel();
+// }); 

@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="top-nav">
             <div class="logo">
                 <div class="nav_a">
                     <a href="index.html"><img src="img/UNI_logo.png"></a>
@@ -29,12 +29,11 @@
                     <a href="https://www.hakuhodo-global.com/" target="_blank"><img src="img/HAKUHODO_logo.png"></a>
                 </div>
             </div>
-            <div class="menu">
-                <div class="menu_bar"></div>
-                <div class="menu_bar"></div>
-                <div class="menu_bar"></div>
-            </div>
-            <ul class="menu_ul">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
                 <li class="menu_item" id="section1">
                     <a>
                         Works
@@ -74,7 +73,7 @@
                     </div>
                     <div class="tag_container wrap_size1" id="tag_container">
                         <div class="tag_item active case_name" id="case_name1">生活時尚</div>
-                        <div class="tag_item case_name"id="case_name2">政府組織</div>
+                        <div class="tag_item case_name" id="case_name2">政府組織</div>
                         <div class="tag_item case_name" id="case_name3">3C科技</div>
                         <div class="tag_item case_name" id="case_name4">健康醫療</div>
                         <div class="tag_item case_name" id="case_name5">休閒娛樂</div>
@@ -82,7 +81,7 @@
 
                     <div id="case_title1" class="case__title">
                         <div>
-                            <span class="main1_span" >生活時尚</span>
+                            <span class="main1_span">生活時尚</span>
                         </div>
                         <br>
                         <hr>
@@ -258,7 +257,7 @@
                     </div>
                     <div id="case_title2" class="case__title">
                         <div>
-                            <span class="main1_span" >政府組織</span>
+                            <span class="main1_span">政府組織</span>
                         </div>
                         <br>
                         <hr>
@@ -314,7 +313,7 @@
                     </div>
                     <div id="case_title3" class="case__title">
                         <div>
-                            <span class="main1_span" >3C科技</span>
+                            <span class="main1_span">3C科技</span>
                         </div>
                         <br>
                         <hr>
@@ -380,7 +379,7 @@
                     </div>
                     <div id="case_title4" class="case__title">
                         <div>
-                            <span class="main1_span" >健康醫療</span>
+                            <span class="main1_span">健康醫療</span>
                         </div>
                         <br>
                         <hr>
@@ -406,7 +405,7 @@
                     </div>
                     <div id="case_title5" class="case__title">
                         <div>
-                            <span class="main1_span" >休閒娛樂</span>
+                            <span class="main1_span">休閒娛樂</span>
                         </div>
                         <br>
                         <hr>
@@ -465,7 +464,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btn_hide" >
+                        <div class="btn_hide">
                             <p class="btn_hide_txt" id="btn_change_word">see more</p>
                             <div class="btn_hide_arrow" id="btn_change_arrow"></div>
                         </div>
@@ -689,8 +688,7 @@
                                     </div>
                                     <div class="from_input">
                                         <label for="" class="imp_mark">電子郵件 <span>*</span></label>
-                                        <span class="contact_notice_msg"
-                                            id="">請輸入正確格式的電子郵件</span>
+                                        <span class="contact_notice_msg" id="">請輸入正確格式的電子郵件</span>
                                         <input type="email" pattern=".+@gmail.com">
                                     </div>
                                     <div class="from_input">

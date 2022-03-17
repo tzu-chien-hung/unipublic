@@ -1,6 +1,5 @@
 
 斷點設定
-
 @media screen and (min-width: 1025px){
 
 }
@@ -9,8 +8,12 @@
 
 }
 
-@media screen and (max-width: 767.98px){
+@media screen and (min-width: 420px) and (max-width: 767.98px){
 
+}
+
+@media screen and (max-width: 419.98px) {
+      
 }
 
     --slider-width-desktop: 50vw;
