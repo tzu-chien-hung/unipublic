@@ -599,7 +599,14 @@ h2{
     }
     .about_bg{
         margin: 10px auto;
+        width: 75vw;
+        height: 35vh;
+        padding-bottom: 0;
     }
+    .line_box_3 {
+        bottom: 40%;
+        left: -12%;
+      }
     .about_description{
         font-size: 18px;
     }
@@ -611,6 +618,8 @@ h2{
     .subtitle_box{
         left: -20px;
         font-size: 18px;
+        width: 45%;
+        padding: 0;
     }
     .service_area{
         display: block;
