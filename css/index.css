@@ -357,7 +357,7 @@ h2{
   }
   
   .service_content .service_item {
-    width: 50%;
+    width: 48%;
     font-size: 20px;
     padding: 10px 0;
     padding-left: 14px;
@@ -444,6 +444,10 @@ h2{
 }
 .from_input{
     padding: 10px;
+}
+.from_input_text{
+    height: 203px;
+    width: 498px;
 }
 .imp_mark > span{
     display: inline;
@@ -557,6 +561,10 @@ h2{
     .form_select{
         width: 90%;
     }
+    .from_input_text{
+        height: 200px;
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 767.98px){
@@ -627,5 +635,15 @@ h2{
     }
     .contact_info{
         padding-bottom: 50px;
+    }
+    .from_input_text{
+        height: 200px;
+        width: 90%;
+    }
+    .service_content .service_item {
+        width: 90%;
+    }
+    .case_subtitle{
+        top: 45px;
     }
 }

@@ -177,24 +177,26 @@
 }
 @media screen and (min-width: 1025px) and (max-width: 1439.98px){
     .slider_container{
-        top: 24.1vw;
+        top: 24.5vw;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024.98px){
     .slider_container{
-        top: 36vw;
+        top: 32vw;
     }
 }
 
 @media screen and (min-width: 420px) and (max-width: 767.98px){
     .slider_container{
-        top: 40vw;
+        top: 55vw;
     }
 }
 
 @media screen and (max-width: 419.98px) {
-      
+    .slider_container{
+        top: 48vw;
+    }
 }
 /* ~~~~~~~~~ 輪播區 下方小圖end  ~~~~~~~~~ */
 /* ======================= 輪播區end =====================*/
