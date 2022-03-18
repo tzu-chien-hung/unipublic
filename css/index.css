@@ -448,6 +448,7 @@ h2{
 .from_input_text{
     height: 203px;
     width: 498px;
+    resize: vertical;
 }
 .imp_mark > span{
     display: inline;
