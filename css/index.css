@@ -56,6 +56,11 @@ h2{
 .tag_item{
     color: #9070af;
 }
+
+/* .main_1to3{
+    margin: auto;
+
+} */
 .main1{
     width: 100%;
     height: 100%;
@@ -65,8 +70,10 @@ h2{
 .main1_bc{
     max-width: 1280px;
     margin: 0 auto;
-
+    width: 90%;
 }
+
+
 .tag_container{
     display: flex;
     margin-top: 50px;
@@ -92,7 +99,7 @@ h2{
 }
 .main1_case{
     width: 32%;
-    height: 286.7px;
+    /* height: 286.7px; */
     margin: 5px;
     overflow: hidden;
     justify-content: flex-start;
@@ -166,7 +173,7 @@ h2{
 .main2{
     margin: 0 auto;
     max-width: 1280px;
-    /* width: 90%; */
+    width: 90%;
 }
 .award_item{
     margin: 10px 0px;
@@ -247,6 +254,7 @@ h2{
 .main3_bc{
     margin: 0 auto;
     max-width: 1280px;
+    width: 90%;
 }
 
 .about_bg {
@@ -502,16 +510,60 @@ h2{
 }
 
 @media screen and (min-width: 1025px){
-    .main0{
-    }
-    .main0_dots{
-    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024.98px){
-
+    .case_txt{
+    padding-top: 25%;
+    }
+    .case_title{
+        /* font-size: 18px; */
+        bottom: 50px;
+    }
+    .case_subtitle{
+        top: 40px;
+    }
+    .main0_UPR{
+        width: 40%;
+    }
+    .main0_arrow{
+        width: 8%;
+        top: 220px;
+    }
+    .main0{
+        height: 50vh;
+    }
+    .main0_dots{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 767.98px){
+    .main0_UPR{
+        width: 50%;
+    }
 
+    .main1_case{
+        margin: 10px auto;
+        width: 90%;
+    }
+    .main0_arrow{
+        width: 10%;
+        top:210px;
+    }
+    .main0{
+        height: 45vh;
+    }
+    .main0_dots{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+    }
 }
