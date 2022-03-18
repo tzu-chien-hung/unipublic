@@ -103,6 +103,10 @@ h2{
     overflow: hidden;
     justify-content: flex-start;
 }
+.main1_case img:hover{
+    transform: scale(1.2);
+    overflow: hidden;
+}
 
 .hideCase .main1_case{
     display: none;
@@ -540,9 +544,13 @@ h2{
         transform: translate(-50%, -50%);
         width: 60%;
     }
-    .tag_item{
-
+    .main1_bc{
+        width: 95%;
     }
+    .main1_case{
+        width: 31.9%;
+    }
+
 }
 
 @media screen and (max-width: 767.98px){
@@ -567,5 +575,8 @@ h2{
         left: 50%;
         transform: translate(-50%, -50%);
         width: 60%;
+    }
+    h2{
+        font-size: 24px;
     }
 }
