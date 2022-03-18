@@ -92,3 +92,18 @@ if(input === ''){
 }
 
 // console.log(input)
+
+// =================    form 空值跳出提醒span =====================//
+
+let importantInput = document.querySelectorAll('.important_input');
+let showLabel = document.querySelectorAll('.contact_notice_msg');
+
+importantInput.forEach((el,i)=>{
+    el.addEventListener('blur',()=>{
+        if(el.value == ""){
+            showLabel[i].style.display = "inline-block"
+        }else{
+            showLabel[i].style.display = "none"
+        }
+    })
+})
