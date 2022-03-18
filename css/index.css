@@ -53,9 +53,7 @@ h2{
 .active{
     background-color: #fff;
 }
-.tag_item{
-    color: #9070af;
-}
+
 
 /* .main_1to3{
     margin: auto;
@@ -87,6 +85,7 @@ h2{
     border-radius: 18px;
     text-align: center;
     cursor: pointer;
+    color: #9070af;
 
 }
 .tag_item:hover{
@@ -540,6 +539,9 @@ h2{
         left: 50%;
         transform: translate(-50%, -50%);
         width: 60%;
+    }
+    .tag_item{
+
     }
 }
 

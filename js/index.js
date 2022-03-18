@@ -8,6 +8,7 @@ go_work_btn.addEventListener('click', function (){
         top: works,
         behavior: "smooth",
     })
+    console.log("1212")
 });
 // =================    main1 works五個按鍵的背景特效  ===============//
 let works_case = document.querySelectorAll(".tag_item");
