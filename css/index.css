@@ -584,6 +584,9 @@ h2{
     .main0{
         height: 45vh;
     }
+    .tag_container{
+        flex-wrap: wrap;
+    }
     .main0_dots{
         position: absolute;
         top: 50%;
