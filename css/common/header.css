@@ -214,9 +214,9 @@ nav{
     transform: rotate(-45deg) translate(-14px, 8px);
     }
     .menu_div{
-        overflow: hidden;
+        /* overflow: hidden;
         height: 100vh;
-        width: 100vw;
+        width: 100vw; */
         position: absolute;
         top: 0;
         right: 0;
@@ -224,7 +224,7 @@ nav{
     #menu
     {
         flex-flow: column;
-        position: absolute;
+        position: fixed;
         width: 300px;
         height: 100vh;
         /* margin: -100px 0 0 -50px; */

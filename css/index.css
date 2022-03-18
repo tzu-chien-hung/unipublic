@@ -223,11 +223,7 @@ h2{
     background-color: #1a1a1a;
     width: 100%;
 }
-.service_area{
-    display: flex;
-    padding-top: 100px;
-    width: 1000px;
-}
+
 .service_content_logo {
     display: flex;
     flex-wrap: wrap;
@@ -550,7 +546,17 @@ h2{
     .main1_case{
         width: 31.9%;
     }
-
+    .from_input input{
+        width: 90%;
+        /* height: 36px;
+        border: unset;
+        border-radius: 2px;
+        outline: 1px solid #373737;
+        padding-left: 10px; */
+    }
+    .form_select{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 767.98px){
@@ -578,5 +584,48 @@ h2{
     }
     h2{
         font-size: 24px;
+    }
+    .about_bg{
+        margin: 10px auto;
+    }
+    .about_description{
+        font-size: 18px;
+    }
+    .contact_main3{
+        display:flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .subtitle_box{
+        left: -20px;
+        font-size: 18px;
+    }
+    .service_area{
+        display: block;
+        padding-top: 80px;
+        width: 90%;
+
+    }
+    .service_content{
+        margin: 0;
+        width: 90%;
+    }
+    .award_content div{
+        font-size: 16px;
+    }
+    .award_item{
+
+        display: block;
+    }
+    .service_content {
+        width: 90%;
+      }
+      .client_logo{
+        width: 30%;
+        margin: 0 auto;
+    
+    }
+    .contact_info{
+        padding-bottom: 50px;
     }
 }

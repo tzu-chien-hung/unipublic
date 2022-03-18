@@ -106,4 +106,5 @@ importantInput.forEach((el,i)=>{
             showLabel[i].style.display = "none"
         }
     })
-})
+});
+
