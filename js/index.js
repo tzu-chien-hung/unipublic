@@ -8,7 +8,7 @@ go_work_btn.addEventListener('click', function (){
         top: works,
         behavior: "smooth",
     })
-    console.log("1212")
+    // console.log("1212")
 });
 // =================    main1 works五個按鍵的背景特效  ===============//
 let works_case = document.querySelectorAll(".tag_item");
@@ -25,6 +25,7 @@ works_case.forEach(function (element, index) {
 // =================    main1 works五個按鍵滑動特效  =================//
 let case_name = document.querySelectorAll(".case_name");
 let title = document.querySelectorAll(".case__title");
+
 case_name.forEach(function (element, index) {
     element.addEventListener('click', function () {
         window.scrollTo({
